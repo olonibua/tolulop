@@ -46,6 +46,7 @@ function App() {
        <Route path="pocket" element={<Pocket />} />
        <Route path="portfolio" element={<Portfolio />} />
      </Routes>
+     <Home />
      {showComponent &&  <Contact />}
    
 

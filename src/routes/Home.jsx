@@ -29,10 +29,6 @@ import Github from '../img/github.png'
 import Behance from '../img/behance.png'
 import Nav from '../Component/Nav';
 import ThemeToggle from '../Component/Themetoggle';
-// import About from './About'
-// import Skills from './Skills'
-// import Project from './Project'
-// import Contact from './Contact'
 
 
 
@@ -143,7 +139,7 @@ const Home = (props) => {
         </div>
         <div className='wel-w text-[70px] sm:text-[110px] sm:max-w-[400px] md:max-w-[900px] lg:max-w-[1300px] max-w-[290px]'>
         <div className='wel '>
-            {/* <span className=''>       WELCOME TO MY PORTFOLIO&nbsp;&nbsp;&nbsp;</span> */}
+       
         </div>
         <div  className='wel'>
             <span id='about'>       WELCOME TO MY PORTFOLIO&nbsp;&nbsp;&nbsp;</span>
@@ -151,14 +147,11 @@ const Home = (props) => {
         </div>
 
         
-        {/* {showPage &&  <About />}
-        {showPage &&  <Skills />}
-        {showPage &&  <Project />}
-        {showPage &&  <Contact />} */}
+
 
 <div >
         
-{/* ref={sectionRef} */}
+
 {showComponent &&  
         <div  className='w-full mb-10 py-0 sm:py-8 '>
            
@@ -181,7 +174,7 @@ const Home = (props) => {
             <img className='w-[115px] md:w-[180px] mx-8 circle mt-20 float-right z-10 block' src={circle} alt=''/>
     
             </div>
-            {/* <img className='w-[100px] sm:w-[200px] float-right pt-8 m-8 sm:m-16' src={sign} alt='' /> */}
+     
             
           
         </div>}
