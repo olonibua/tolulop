@@ -160,7 +160,7 @@ const Home = (props) => {
             
             <div className='about flex flex-col md:col-span-2 justify-center'>
                 <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold pb-4'>About.</h1>
-                <p className='text-[10px] pb-2  p sm:text-xs md:text-sm'>Hello! My name is Tolulope Olonibua, i am
+                <p className='text-[10px] pb-2  p sm:text-xs md:text-sm'>Hello! My name is Tolulope Olonibua, i am a
                 detail-oriented Frontend Software Engineer dedicated to the quest of 
                 developing solutions that leverage on best practise technologies to deliver top user experience. 
                 My interest in web development started back in 2020, i used to be a designer before i decided to start coding. </p>
