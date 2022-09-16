@@ -22,6 +22,7 @@ import illustrator from'../img/Illustrator.png'
 import animate from'../img/Animate.png'
 import adobexd from'../img/Adobe XD.png'
 import sch from'../img/sch.png'
+import Arrow from'../img/Arrow.png'
 import wordpress from'../img/wordpress.png'
 import edu from'../img/edu.png'
 import twitter from '../img/Twitter.png'
@@ -269,23 +270,28 @@ const Home = (props) => {
         {skill === 'Design' && 
         <div className='py-5 items-center grid md:grid-cols-3'>
 
-        <Link to='/pocket'>
-        <div className='bg-{pocketone} bgg text-white border-2 mt-4 rounded-xl h-64 w-64 py-10'></div>
-        </Link>
-        <Link to='/portfolio'>
-        <div className='bg-black text-white border-2 bg mt-4 rounded-xl h-64 w-64 py-10'>
+        <div className='bgg text-center mx-auto border-4 mt-4 p h-72 w-72 py-10'>
+            <h2 className='font-bold text-[14px] md:text-[17px]'>Pocket App</h2>
+            <p className='p-2 my-4 text-[10px] md:text-xs'>Redesigned and Developed Pocket App website landing page</p>
+            <p className='flex text-center font-bold mx-4 underline underline-offset-2  p-2 text-[10px] md:text-xs'> <a href='https://tolulope55.github.io/pocketapp' target='_blank'>Visit site </a> <img className='text-center h-3 mx-2' src={Arrow} alt=''/></p>
         </div>
-        </Link>
-        <div className='bg-black border-2  text-white mt-4 rounded-xl h-64 w-64 py-10'>
+
+        <div className=' border-4 text-center mx-auto bg mt-4 p h-72 w-72  py-10'>
+        <h2 className='font-bold text-[14px] md:text-[17px]'>My Portfolio Site </h2>
+            <p className='p-2 my-4 text-[10px] md:text-xs'>Designed and Developed my Portfolio website from scratch using React - Tailwind Css </p>
+            <p className='flex p-2 text-[10px] md:text-xs font-bold mx-4 underline underline-offset-2 text-center '><a href='https://olonibua.github.io/tolulope' target='_blank'>Visit site </a> <img className='text-center h-3 mx-2' src={Arrow} alt=''/></p>
+        </div>
+
+        <div className='border-4 bg  mt-4  h-72 w-72  py-10'>
         </div>
         </div>
          }
         {skill === 'Development' && 
-        <div className='py-5 items-center grid lg:grid-cols-3 '>
+        <div className='py-5 items-center grid lg:grid-cols-2 '>
         
-        <div className='bg-black border-2 text-white mt-4 rounded-xl h-64 w-64 py-10'>
+        <div className='border-4 mt-4 h-72 w-72  py-10'>
         </div>
-        <div className='bg-black border-2 text-white mt-4 rounded-xl h-64 w-64 py-10'>
+        <div className='border-4 mt-4 h-72 w-72  py-10'>
         </div>
         </div>
           } 

@@ -69,7 +69,7 @@
   }
 } 
 .bgg{
-  background-image: url('./img/pocketone.png');
+
   /* background-size: "cover"; */
   height: 256px;
   width: 256px;
@@ -81,7 +81,7 @@
   
 }
 .bg{
-  background-image: url('./img/mywebb.png');
+
   /* background-size: "cover"; */
   height: 256px;
   width: 256px;
