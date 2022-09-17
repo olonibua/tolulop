@@ -116,7 +116,7 @@ const Home = (props) => {
 }
     
         
-        <div className='sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] max-w-[320px] w-full h-[35vh] md:h-[80vh] sm:mt-16 mt-24 mx-auto grid md:grid-cols-4'>
+        <div className='sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] max-w-[310px] w-full h-[35vh] md:h-[80vh] sm:mt-16 mt-24 mx-auto grid md:grid-cols-4'>
         <div className='flex flex-col pb-3 home md:col-span-3 justify-center ' >
         <h1 className='text-4xl md:text-7xl lg:text-8xl h1 dynamic-txts pb-4'>
          <TypeWritter 
@@ -135,10 +135,10 @@ const Home = (props) => {
             {showsign && <img className='w-[100px] mt-7 sm:hidden z-10 block' src={signature} alt=''/> } 
              
         </div>
-        {showAbout && <img className='w-[180px] aimg lg:w-[320px] text-center mt-24 justify-center align-middle hidden md:block md:mx-auto ' src={Abouto} alt='' />}
+        {showAbout && <img className='w-[180px] aimg lg:w-[310px] text-center mt-24 justify-center align-middle hidden md:block md:mx-auto ' src={Abouto} alt='' />}
         
         </div>
-        <div className='wel-w text-[70px] sm:text-[110px] sm:max-w-[400px] md:max-w-[900px] lg:max-w-[1300px] max-w-[320px]'>
+        <div className='wel-w text-[70px] sm:text-[110px] sm:max-w-[400px] md:max-w-[900px] lg:max-w-[1300px] max-w-[310px]'>
         <div className='wel '>
        
         </div>
@@ -156,7 +156,7 @@ const Home = (props) => {
 {showComponent &&  
         <div  className='w-full mb-10 py-0 sm:py-8 '>
            
-            <div className=' sm:p-1 sm:mb-16 py-2  sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] mx-auto max-w-[320px]  grid md:grid-cols-3'>
+            <div className=' sm:p-1 sm:mb-16 py-2  sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] mx-auto max-w-[310px]  grid md:grid-cols-3'>
             
             <div className='about flex flex-col md:col-span-2 justify-center'>
                 <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold pb-4'>About.</h1>
@@ -193,9 +193,9 @@ const Home = (props) => {
 
         
         {showComponent &&  <div>
-        <div id='skills' className='w-full skill mt-10 sm:py-14 border-y-2 py-5 sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] mx-auto max-w-[320px]'>
+        <div id='skills' className='w-full skill mt-10 sm:py-14 border-y-2 py-5 sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] mx-auto max-w-[310px]'>
         
-        <div className='sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] max-w-[320px] mx-auto'>
+        <div className='sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] max-w-[310px] mx-auto'>
         <h1 className='text-2xl md:text-3xl mt-6 lg:text-4xl font-bold pb-4'>Skills & Education</h1>
         <button className='text-[10px] px-6 p p-2 sm:text-xs hover:border border-r-2 rounded design md:text-sm' onClick={() => setSkill('Design')}>Design</button> 
         <button className='text-[10px] p-2 p hover:border rounded sm:text-xs border-l-2 md:text-sm px-8' onClick={() => setSkill('Development')}> Development</button>
@@ -268,8 +268,8 @@ const Home = (props) => {
    <div>
     <div id='project' className=''>
     
-    <div className='w-full project mt-8 sm:py-8 py-5 p-4 sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] mx-auto max-w-[320px]'>
-        <div className= 'sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] max-w-[350px] mx-auto'>
+    <div className='w-full project mt-8 sm:py-8 py-5 p-4 sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] mx-auto max-w-[310px]'>
+        <div className= 'sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] max-w-[330px] mx-auto'>
         {showComponent &&   <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold pb-10'>Projects.</h1>}
         {showComponent &&   <button className='text-[10px] px-6 p-2 sm:text-xs hover:border p  border-r-2 rounded design md:text-sm' onClick={() => setSkill('Design')}>Design</button> }
         {showComponent &&   <button className='text-[10px] p-2 sm:text-xs hover:border p border-l-2 rounded  md:text-sm px-8' onClick={() => setSkill('Development')}> Development</button>}
@@ -277,28 +277,28 @@ const Home = (props) => {
         {skill === 'Design' && 
         <div className='py-5 items-center grid md:grid-cols-3'>
 
-        <div className='bgg text-center mx-auto border-4 mt-4 p h-72 w-72 py-10'>
+        <div className='bgg text-center mx-auto border-2 md:border-4 mt-4 p h-72 w-72 py-10'>
             <h2 className='font-bold text-[14px] md:text-[17px]'>Pocket App</h2>
             <p className='p-2 my-4 text-[10px] md:text-xs'>Redesigned and Developed Pocket App website landing page</p>
             <p className='flex text-center font-bold mx-4 underline underline-offset-2  p-2 text-[10px] md:text-xs'> <a href='https://tolulope55.github.io/pocketapp' target='_blank'>Visit site </a> <img className='text-center h-3 mx-2' src={Arrow} alt=''/></p>
         </div>
 
-        <div className=' border-4 text-center mx-auto bg mt-4 p h-72 w-72  py-10'>
+        <div className=' border-2 md:border-4 text-center mx-auto bg mt-4 p h-72 w-72  py-10'>
         <h2 className='font-bold text-[14px] md:text-[17px]'>My Portfolio Site </h2>
             <p className='p-2 my-4 text-[10px] md:text-xs'>Designed and Developed my Portfolio website from scratch using React - Tailwind Css </p>
             <p className='flex p-2 text-[10px] md:text-xs font-bold mx-4 underline underline-offset-2 text-center '><a href='https://olonibua.github.io/tolulope' target='_blank'>Visit site </a> <img className='text-center h-3 mx-2' src={Arrow} alt=''/></p>
         </div>
 
-        <div className='border-4 bg  mt-4  h-72 w-72  py-10'>
+        <div className='border-2 md:border-4 bg  mt-4  h-72 w-72  py-10'>
         </div>
         </div>
          }
         {skill === 'Development' && 
         <div className='py-5 items-center grid lg:grid-cols-2 '>
         
-        <div className='border-4 mt-4 h-72 w-72  py-10'>
+        <div className='border-2 md:border-4 mt-4 h-72 w-72  py-10'>
         </div>
-        <div className='border-4 mt-4 h-72 w-72  py-10'>
+        <div className='border-2 md:border-4 mt-4 h-72 w-72  py-10'>
         </div>
         </div>
           } 
