@@ -116,7 +116,7 @@ const Home = (props) => {
 }
     
         
-        <div className='sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] max-w-[290px] w-full h-[35vh] md:h-[80vh] sm:mt-16 mt-24 mx-auto grid md:grid-cols-4'>
+        <div className='sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] max-w-[320px] w-full h-[35vh] md:h-[80vh] sm:mt-16 mt-24 mx-auto grid md:grid-cols-4'>
         <div className='flex flex-col pb-3 home md:col-span-3 justify-center ' >
         <h1 className='text-4xl md:text-7xl lg:text-8xl h1 dynamic-txts pb-4'>
          <TypeWritter 
@@ -135,10 +135,10 @@ const Home = (props) => {
             {showsign && <img className='w-[100px] mt-7 sm:hidden z-10 block' src={signature} alt=''/> } 
              
         </div>
-        {showAbout && <img className='w-[180px] aimg lg:w-[290px] text-center mt-24 justify-center align-middle hidden md:block md:mx-auto ' src={Abouto} alt='' />}
+        {showAbout && <img className='w-[180px] aimg lg:w-[320px] text-center mt-24 justify-center align-middle hidden md:block md:mx-auto ' src={Abouto} alt='' />}
         
         </div>
-        <div className='wel-w text-[70px] sm:text-[110px] sm:max-w-[400px] md:max-w-[900px] lg:max-w-[1300px] max-w-[290px]'>
+        <div className='wel-w text-[70px] sm:text-[110px] sm:max-w-[400px] md:max-w-[900px] lg:max-w-[1300px] max-w-[320px]'>
         <div className='wel '>
        
         </div>
@@ -156,20 +156,27 @@ const Home = (props) => {
 {showComponent &&  
         <div  className='w-full mb-10 py-0 sm:py-8 '>
            
-            <div className=' sm:p-1 sm:mb-16 py-2  sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] mx-auto max-w-[290px]  grid md:grid-cols-3'>
+            <div className=' sm:p-1 sm:mb-16 py-2  sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] mx-auto max-w-[320px]  grid md:grid-cols-3'>
             
             <div className='about flex flex-col md:col-span-2 justify-center'>
                 <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold pb-4'>About.</h1>
                 <p className='text-[10px] pb-2  p sm:text-xs md:text-sm'>Hello! My name is Tolulope Olonibua, i am a
                 detail-oriented Frontend Software Engineer dedicated to the quest of 
                 developing solutions that leverage on best practise technologies to deliver top user experience. 
-                My interest in web development started back in 2020, i used to be a designer before i decided to start coding. </p>
+                My interest in web development started back in high school, more than my high school buddies, i was always intrigued by technology.
+                In high school, i was appointed the CISCO junior instructor for my level. </p>
+                <p className='text-[10px] pb-2  p sm:text-xs md:text-sm'>However, six years ago, after graduating from high school, my friend and I printed 500 pages of a book on HTML and CSS to learn how to make websites
+                    but as soon as i moved to the University, i was focused on my academic work. After graduating from the University, i started observing numerous website designs,
+                    i said to myself, "how do people make such cool websites!" then i recall my previous interest in website development.
+                    I started learning the basics by reading documents and watching instructional videos on website development.
+
+                </p>
     
             <p className='text-[10px] p pt-2 sm:text-xs md:text-sm'>My approach to web design and development is inﬂuenced by my 
-            understanding of design as a problem solving process. having acquire the required skills, My main focus
-             these days is building accessible, incusive products and digital
-            experiences as much as possible. My goal is to secure a responsive carreer opportunity to fully utilize my training skills, while making 
-            significant contribution to achieve goals of an company that focus on customer satisfaction and experience.</p>
+            understanding of design as a problem solving process. Having attained the necessary competence, my main focus
+             these days is building accessible, inclusive products and digital
+            experiences as much as possible. My goal is to secure a responsive carreer opportunity to fully utilize my skills, while making 
+            significant contributions to achieve goals of a company that focus on customer satisfaction and experience.</p>
             
             </div>
             <img className='w-[115px] md:w-[180px] mx-8 circle mt-20 float-right z-10 block' src={circle} alt=''/>
@@ -186,9 +193,9 @@ const Home = (props) => {
 
         
         {showComponent &&  <div>
-        <div id='skills' className='w-full skill mt-10 sm:py-14 border-y-2 py-5 sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] mx-auto max-w-[290px]'>
+        <div id='skills' className='w-full skill mt-10 sm:py-14 border-y-2 py-5 sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] mx-auto max-w-[320px]'>
         
-        <div className='sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] max-w-[290px] mx-auto'>
+        <div className='sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] max-w-[320px] mx-auto'>
         <h1 className='text-2xl md:text-3xl mt-6 lg:text-4xl font-bold pb-4'>Skills & Education</h1>
         <button className='text-[10px] px-6 p p-2 sm:text-xs hover:border border-r-2 rounded design md:text-sm' onClick={() => setSkill('Design')}>Design</button> 
         <button className='text-[10px] p-2 p hover:border rounded sm:text-xs border-l-2 md:text-sm px-8' onClick={() => setSkill('Development')}> Development</button>
@@ -261,7 +268,7 @@ const Home = (props) => {
    <div>
     <div id='project' className=''>
     
-    <div className='w-full project mt-8 sm:py-8 py-5 p-4 sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] mx-auto max-w-[290px]'>
+    <div className='w-full project mt-8 sm:py-8 py-5 p-4 sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] mx-auto max-w-[320px]'>
         <div className= 'sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] max-w-[350px] mx-auto'>
         {showComponent &&   <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold pb-10'>Projects.</h1>}
         {showComponent &&   <button className='text-[10px] px-6 p-2 sm:text-xs hover:border p  border-r-2 rounded design md:text-sm' onClick={() => setSkill('Design')}>Design</button> }
