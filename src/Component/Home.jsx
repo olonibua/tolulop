@@ -117,7 +117,7 @@ const Home = (props) => {
 }
     
         
-        <div className='sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1100px] max-w-[310px] w-full h-[35vh] md:h-[80vh] sm:mt-16 mt-24 mx-auto grid md:grid-cols-4'>
+        <div className='sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1100px] max-w-[300px] w-full h-[35vh] md:h-[80vh] sm:mt-16 mt-24 mx-auto grid md:grid-cols-4'>
         <div className='flex flex-col pb-3 home md:col-span-3 justify-center ' >
         <h1 className='text-4xl md:text-7xl lg:text-8xl h1 dynamic-txts pb-4'>
          <TypeWritter 
@@ -127,7 +127,7 @@ const Home = (props) => {
          />
         </h1>
         <div className='sm:max-w-[500px] md:max-w-[700px] lg:max-w-[450px] max-w-[400px] flex w-full sm:mt-4 pl-4 mt-2'>
-        {showLine && <img className='h-[60px] w-[5px]' src={Line} alt='' />}
+        {showLine && <img className='h-[40px] md:h-[60px] w-[5px]' src={Line} alt='' />}
         {showComponent && <p className='text-[10px] sm:text-[15px] md:text-[16px] lg:text-[17px] p pb-3 ml-3 leading-3 md:text-sm'>A<strong class> Front-End Web Developer </strong> passionate about creating interactive
         applications and experiences on the web.
         </p>}
@@ -139,7 +139,7 @@ const Home = (props) => {
         {showAbout && <img className='w-[180px] aimg lg:w-[310px] text-center mt-24 justify-center align-middle hidden md:block md:mx-auto ' src={Abouto} alt='' />}
         
         </div>
-        <div className='wel-w text-[70px] sm:text-[110px] sm:max-w-[400px] md:max-w-[900px] lg:max-w-[1300px] max-w-[310px]'>
+        <div className='wel-w text-[70px] sm:text-[110px] sm:max-w-[400px] md:max-w-[900px] lg:max-w-[1100px] max-w-[280px]'>
         <div className='wel '>
        
         </div>
@@ -157,7 +157,7 @@ const Home = (props) => {
 {showComponent &&  
         <div  className='w-full mb-10 py-0 sm:py-8 '>
            
-            <div className=' sm:p-1 sm:mb-16 py-2  sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1100px] mx-auto max-w-[310px]  grid md:grid-cols-3'>
+            <div className=' sm:p-1 sm:mb-16 py-2  sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1100px] mx-auto max-w-[300px]  grid md:grid-cols-2'>
             
             <div className='about flex flex-col md:col-span-2 justify-center'>
                 <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold pb-4'>About.</h1>
@@ -178,7 +178,7 @@ const Home = (props) => {
              these days is building accessible, inclusive products and digital
             experiences as much as possible. My goal is to secure a responsive carreer opportunity to fully utilize my skills, while making 
             significant contributions to achieve goals of a company that focus on customer satisfaction and experience.</p>
-            <div className='text-[10px] p pt-2 sm:text-xs md:text-sm mt-2'>
+            <div className='text-[10px] hidden md:block p pt-2 sm:text-xs md:text-sm mt-2'>
                 <p className='font-bold text-[11px] my-2 sm:text-sm md:text-sm'>Here are a few technologies i've been working with recently:</p>
                 <div className='flex space-between'>
                 <div>
@@ -324,7 +324,7 @@ const Home = (props) => {
         <div>
         </div>
     
-        <div className='wel-w mt-4 text-[70px] sm:text-[110px] overflow-hidden sm:max-w-[400px] md:max-w-[900px] lg:max-w-[1300px] max-w-[270px]'>
+        <div className='wel-w mt-4 text-[70px] sm:text-[110px] overflow-hidden sm:max-w-[400px] md:max-w-[900px] lg:max-w-[1100px] max-w-[280px]'>
         <div className='wel'>
             {/* <span className=''>       WELCOME TO MY PORTFOLIO&nbsp;&nbsp;&nbsp;</span> */}
         </div>
@@ -341,13 +341,13 @@ const Home = (props) => {
     {showComponent &&   
     <div className='text-white  bg-black w-full  mx-auto '>
     <div className='sm:max-w-[500px]  md:max-w-[700px] lg:max-w-[1100px] max-w-[300px] w-full py-10  mx-auto'>
-    <p className='text-md'>Got an idea?</p>
-        <h2 className='text-2xl md:text-3xl lg:text-4xl pb-8 p underline underline-offset-4 font-bold'><a href='https://linkedin.com/olonibua-tolu-465042127' target="_blank">Let's talk about it</a></h2>
+    <p className='text-[13px] text-md'>Got an idea?</p>
+        <h2 className='text-xl md:text-3xl lg:text-4xl pb-8 p underline underline-offset-2 md:underline-offset-4 font-bold'><a href='https://linkedin.com/olonibua-tolu-465042127' target="_blank">Let's talk about it</a></h2>
       <div className=' border-b-2 py-2 grid md:grid-cols-3'>
      
-       <p className='text-[#878787]'>mail:<br/><span className='p text-white'>Olonts@gmail.com</span></p>
-          <p className='text-[#878787]'>call:<br/><span className='p text-white'>+2348149249926</span></p>
-          <p className='text-[#878787] sm:ml-24'>Connect:<br/> <span className=' justify-between flex'>
+       <p className='text-[13px] md:text-[16px] text-[#878787]'>mail:<br/><span className='p text-white'>Olonts@gmail.com</span></p>
+          <p className='text-[13px] md:text-[16px] text-[#878787]'>call:<br/><span className='p text-white'>+2348149249926</span></p>
+          <p className='text-[#878787] text-[13px] md:text-[16px] sm:ml-24'>Connect:<br/> <span className=' justify-between flex'>
           <a href='https://twitter.com/ifetolu5' target="_blank"><img src={twitter} alt='' /></a> <a href='https://github.com/tolulope55/' target="_blank" ><img src={Github} alt='' /></a>
           <a href='https://behance.net/olonibutolulop' target="_blank"> <img src={Behance} alt='' /></a>
           </span>
@@ -356,7 +356,7 @@ const Home = (props) => {
       
     </div>
     <div className='bg-[#111117] w-full text-center h-10 mx-auto'>
-          <p className='text-xs py-3 p md:text-md'>Designed and Development by <strong className='text-white p'> <a href='https://linkedin.com/olonibua-tolu-465042127' target="_blank">Tolulope Olonibua</a></strong></p>
+          <p className='text-[10px] py-3 p md:text-md'>Designed and Development by <strong className='text-white p'> <a href='https://linkedin.com/olonibua-tolu-465042127' target="_blank">Tolulope Olonibua</a></strong></p>
     </div>
   </div>
 }
