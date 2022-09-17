@@ -348,7 +348,7 @@ const Home = (props) => {
        <p className='text-[13px] md:text-[16px] text-[#878787]'>mail:<br/><span className='p text-white'>Olonts@gmail.com</span></p>
           <p className='text-[13px] md:text-[16px] text-[#878787]'>call:<br/><span className='p text-white'>+2348149249926</span></p>
           <p className='text-[#878787] text-[13px] md:text-[16px] sm:ml-24'>Connect:<br/> <span className=' justify-between flex'>
-          <a href='https://twitter.com/ifetolu5' target="_blank"><img src={twitter} alt='' /></a> <a href='https://github.com/tolulope55/' target="_blank" ><img src={Github} alt='' /></a>
+          <a href='https://twitter.com/ifetolu5' target="_blank"><img src={twitter} alt='' /></a> <a href='https://github.com/olonibua/' target="_blank" ><img src={Github} alt='' /></a>
           <a href='https://behance.net/olonibutolulop' target="_blank"> <img src={Behance} alt='' /></a>
           </span>
           </p>
