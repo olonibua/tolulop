@@ -117,7 +117,7 @@ const Home = (props) => {
 }
     
         
-        <div className='sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1200px] max-w-[310px] w-full h-[35vh] md:h-[80vh] sm:mt-16 mt-24 mx-auto grid md:grid-cols-4'>
+        <div className='sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1100px] max-w-[310px] w-full h-[35vh] md:h-[80vh] sm:mt-16 mt-24 mx-auto grid md:grid-cols-4'>
         <div className='flex flex-col pb-3 home md:col-span-3 justify-center ' >
         <h1 className='text-4xl md:text-7xl lg:text-8xl h1 dynamic-txts pb-4'>
          <TypeWritter 
@@ -157,7 +157,7 @@ const Home = (props) => {
 {showComponent &&  
         <div  className='w-full mb-10 py-0 sm:py-8 '>
            
-            <div className=' sm:p-1 sm:mb-16 py-2  sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1200px] mx-auto max-w-[310px]  grid md:grid-cols-3'>
+            <div className=' sm:p-1 sm:mb-16 py-2  sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1100px] mx-auto max-w-[310px]  grid md:grid-cols-3'>
             
             <div className='about flex flex-col md:col-span-2 justify-center'>
                 <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold pb-4'>About.</h1>
@@ -210,9 +210,9 @@ const Home = (props) => {
 
         
         {showComponent &&  <div>
-        <div id='skills' className='w-full skill mt-10 sm:py-14 border-y-2 py-5 sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1200px] mx-auto max-w-[310px]'>
+        <div id='skills' className='w-full skill mt-10 sm:py-14 border-y-2 py-5 sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1100px] mx-auto max-w-[310px]'>
         
-        <div className='sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1200px] max-w-[310px] mx-auto'>
+        <div className='sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1100px] max-w-[310px] mx-auto'>
         <h1 className='text-2xl md:text-3xl mt-6 lg:text-4xl font-bold pb-4'>Skills & Education</h1>
         <button className='text-[10px] px-6 p p-2 sm:text-xs hover:border border-r-2 rounded design md:text-sm' onClick={() => setSkill('Design')}>Design</button> 
         <button className='text-[10px] p-2 p hover:border rounded sm:text-xs border-l-2 md:text-sm px-8' onClick={() => setSkill('Development')}> Development</button>
@@ -285,8 +285,8 @@ const Home = (props) => {
    <div>
     <div id='project' className=''>
     
-    <div className='w-full project mt-8 sm:py-8 py-5 p-4 sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1200px] mx-auto max-w-[310px]'>
-        <div className= 'sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1200px] max-w-[330px] mx-auto'>
+    <div className='w-full project mt-8 sm:py-8 py-5 p-4 sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1100px] mx-auto max-w-[310px]'>
+        <div className= 'sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1100px] max-w-[330px] mx-auto'>
         {showComponent &&   <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold pb-10'>Projects.</h1>}
         {showComponent &&   <button className='text-[10px] px-6 p-2 sm:text-xs hover:border p  border-r-2 rounded design md:text-sm' onClick={() => setSkill('Design')}>Design</button> }
         {showComponent &&   <button className='text-[10px] p-2 sm:text-xs hover:border p border-l-2 rounded  md:text-sm px-8' onClick={() => setSkill('Development')}> Development</button>}
@@ -340,7 +340,7 @@ const Home = (props) => {
 
     {showComponent &&   
     <div className='text-white  bg-black w-full  mx-auto '>
-    <div className='sm:max-w-[500px]  md:max-w-[700px] lg:max-w-[1200px] max-w-[300px] w-full py-10  mx-auto'>
+    <div className='sm:max-w-[500px]  md:max-w-[700px] lg:max-w-[1100px] max-w-[300px] w-full py-10  mx-auto'>
     <p className='text-md'>Got an idea?</p>
         <h2 className='text-2xl md:text-3xl lg:text-4xl pb-8 p underline underline-offset-4 font-bold'><a href='https://linkedin.com/olonibua-tolu-465042127' target="_blank">Let's talk about it</a></h2>
       <div className=' border-b-2 py-2 grid md:grid-cols-3'>
