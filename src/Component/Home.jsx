@@ -356,7 +356,7 @@ const Home = (props) => {
       
     </div>
     <div className='bg-[#111117] w-full text-center h-10 mx-auto'>
-          <p className='text-[10px] py-3 p md:text-md'>Designed and Development by <strong className='text-white p'> <a href='https://linkedin.com/olonibua-tolu-465042127' target="_blank">Tolulope Olonibua</a></strong></p>
+          <p className='text-[10px] py-3 p md:text-md'>Designed and Developed by <strong className='text-white p'> <a href='https://linkedin.com/olonibua-tolu-465042127' target="_blank">Tolulope Olonibua</a></strong></p>
     </div>
   </div>
 }
