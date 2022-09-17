@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 import {Routes, Route, Link} from "react-router-dom";
 import face from '../img/face.png'
+import {GiPlayButton} from 'react-icons/gi'
 import React, {useEffect, useState} from 'react'
 import circle from '../img/circle.png'
 import circlee from '../img/circlee.png'
@@ -116,7 +117,7 @@ const Home = (props) => {
 }
     
         
-        <div className='sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] max-w-[310px] w-full h-[35vh] md:h-[80vh] sm:mt-16 mt-24 mx-auto grid md:grid-cols-4'>
+        <div className='sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1200px] max-w-[310px] w-full h-[35vh] md:h-[80vh] sm:mt-16 mt-24 mx-auto grid md:grid-cols-4'>
         <div className='flex flex-col pb-3 home md:col-span-3 justify-center ' >
         <h1 className='text-4xl md:text-7xl lg:text-8xl h1 dynamic-txts pb-4'>
          <TypeWritter 
@@ -156,7 +157,7 @@ const Home = (props) => {
 {showComponent &&  
         <div  className='w-full mb-10 py-0 sm:py-8 '>
            
-            <div className=' sm:p-1 sm:mb-16 py-2  sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] mx-auto max-w-[310px]  grid md:grid-cols-3'>
+            <div className=' sm:p-1 sm:mb-16 py-2  sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1200px] mx-auto max-w-[310px]  grid md:grid-cols-3'>
             
             <div className='about flex flex-col md:col-span-2 justify-center'>
                 <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold pb-4'>About.</h1>
@@ -177,9 +178,25 @@ const Home = (props) => {
              these days is building accessible, inclusive products and digital
             experiences as much as possible. My goal is to secure a responsive carreer opportunity to fully utilize my skills, while making 
             significant contributions to achieve goals of a company that focus on customer satisfaction and experience.</p>
-            
+            <div className='text-[10px] p pt-2 sm:text-xs md:text-sm mt-2'>
+                <p className='font-bold text-[11px] my-2 sm:text-sm md:text-sm'>Here are a few technologies i've been working with recently:</p>
+                <div className='flex space-between'>
+                <div>
+                    <p className='flex'><GiPlayButton className='mx-[2px]'/>Javascript</p>
+                    <p className='flex'><GiPlayButton className='mx-[2px]'/>React</p>
+                    <p className='flex'><GiPlayButton className='mx-[2px]'/>CSS (Bootstrap, Tailwind)</p>
+                </div>
+                <div className='mx-32'>
+                    
+                    <p className='flex'><GiPlayButton className='mx-[2px]'/>Html</p>
+                    <p className='flex'><GiPlayButton className='mx-[2px]'/>Wordpress</p>
+                    <p className='flex'><GiPlayButton className='mx-[2px]'/>Figma</p>
+                </div>
+                </div>
             </div>
-            <img className='w-[115px] md:w-[180px] mx-8 circle mt-20 float-right z-10 block' src={circle} alt=''/>
+            </div>
+           
+            <img className='w-[115px] md:w-[220px] mx- md:text-center 8 circle mt-20 md:mt-32 md:mx-10 float-right z-10 block' src={circle} alt=''/>
     
             </div>
      
@@ -193,9 +210,9 @@ const Home = (props) => {
 
         
         {showComponent &&  <div>
-        <div id='skills' className='w-full skill mt-10 sm:py-14 border-y-2 py-5 sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] mx-auto max-w-[310px]'>
+        <div id='skills' className='w-full skill mt-10 sm:py-14 border-y-2 py-5 sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1200px] mx-auto max-w-[310px]'>
         
-        <div className='sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] max-w-[310px] mx-auto'>
+        <div className='sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1200px] max-w-[310px] mx-auto'>
         <h1 className='text-2xl md:text-3xl mt-6 lg:text-4xl font-bold pb-4'>Skills & Education</h1>
         <button className='text-[10px] px-6 p p-2 sm:text-xs hover:border border-r-2 rounded design md:text-sm' onClick={() => setSkill('Design')}>Design</button> 
         <button className='text-[10px] p-2 p hover:border rounded sm:text-xs border-l-2 md:text-sm px-8' onClick={() => setSkill('Development')}> Development</button>
@@ -268,8 +285,8 @@ const Home = (props) => {
    <div>
     <div id='project' className=''>
     
-    <div className='w-full project mt-8 sm:py-8 py-5 p-4 sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] mx-auto max-w-[310px]'>
-        <div className= 'sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1050px] max-w-[330px] mx-auto'>
+    <div className='w-full project mt-8 sm:py-8 py-5 p-4 sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1200px] mx-auto max-w-[310px]'>
+        <div className= 'sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1200px] max-w-[330px] mx-auto'>
         {showComponent &&   <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold pb-10'>Projects.</h1>}
         {showComponent &&   <button className='text-[10px] px-6 p-2 sm:text-xs hover:border p  border-r-2 rounded design md:text-sm' onClick={() => setSkill('Design')}>Design</button> }
         {showComponent &&   <button className='text-[10px] p-2 sm:text-xs hover:border p border-l-2 rounded  md:text-sm px-8' onClick={() => setSkill('Development')}> Development</button>}
@@ -289,16 +306,16 @@ const Home = (props) => {
             <p className='flex p-2 text-[10px] md:text-xs font-bold mx-4 underline underline-offset-2 text-center '><a href='https://olonibua.github.io/tolulope' target='_blank'>Visit site </a> <img className='text-center h-3 mx-2' src={Arrow} alt=''/></p>
         </div>
 
-        <div className='border-2 md:border-4 bg  mt-4  h-72 w-72  py-10'>
+        <div className=' border-2 md:border-4 text-center mx-auto bg mt-4 p h-72 w-72  py-10'>
         </div>
         </div>
          }
         {skill === 'Development' && 
         <div className='py-5 items-center grid lg:grid-cols-2 '>
         
-        <div className='border-2 md:border-4 mt-4 h-72 w-72  py-10'>
+        <div className=' border-2 md:border-4 text-center mx-auto bg mt-4 p h-72 w-72  py-10'>
         </div>
-        <div className='border-2 md:border-4 mt-4 h-72 w-72  py-10'>
+        <div className=' border-2 md:border-4 text-center mx-auto bg mt-4 p h-72 w-72  py-10'>
         </div>
         </div>
           } 
@@ -323,7 +340,7 @@ const Home = (props) => {
 
     {showComponent &&   
     <div className='text-white  bg-black w-full  mx-auto '>
-    <div className='sm:max-w-[500px]  md:max-w-[700px] lg:max-w-[1050px] max-w-[300px] w-full py-10  mx-auto'>
+    <div className='sm:max-w-[500px]  md:max-w-[700px] lg:max-w-[1200px] max-w-[300px] w-full py-10  mx-auto'>
     <p className='text-md'>Got an idea?</p>
         <h2 className='text-2xl md:text-3xl lg:text-4xl pb-8 p underline underline-offset-4 font-bold'><a href='https://linkedin.com/olonibua-tolu-465042127' target="_blank">Let's talk about it</a></h2>
       <div className=' border-b-2 py-2 grid md:grid-cols-3'>
