@@ -31,7 +31,7 @@ code {
   font-family: 'Caudex';
 }
 .p{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Rubik', sans-serif;
   /* letter-spacing: 0.025em; */
 }
 
@@ -40,21 +40,42 @@ code {
   /* --color-bg-primary: #828282; */
    color: rgb(238, 238, 238);
    p{
-    color: rgb(142, 142, 142);
+    color: rgb(190, 190, 190);
+   }
+   .bgg{
+    border-color: #fff;
+   }
+   .btn{
+    border-bottom: 2px solid rgb(55, 55, 55);
+   }
+   .btn:hover{
+    border-bottom: 2px solid #fff;
+    background-color: rgb(36, 36, 36);
    }
  
 }
 
+
 .light{
-  --color-bg-primary: #fff;
-  /* --color-bg-primary: #edf2f7; */
-  color: black;
-    .wel{
-    color: rgb(242, 242, 242);
+  --color-bg-primary: rgb(12, 11, 15);
+  /* --color-bg-primary: #828282; */
+   color: rgb(238, 238, 238);
+   p{
+    color: rgb(190, 190, 190);
    }
-   .thank{
-    color: #fff;
+   .bgg{
+    border-color: #fff;
    }
+   .btn{
+    border-bottom: 2px solid rgb(55, 55, 55);
+   }
+   .btn:hover{
+    border-bottom: 2px solid #fff;
+    background-color: rgb(36, 36, 36);
+   }
+}
+.ba{
+  font-family: 'roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .wel-w{
   position: relative;
@@ -98,6 +119,13 @@ code {
   }
 }
 
+.pa{
+  @media screen {
+    
+  }
+  display: block;
+
+}
 
 
 @keyframes wel {

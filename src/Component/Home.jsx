@@ -2,6 +2,7 @@ import { useRef } from 'react'
 import {Routes, Route, Link} from "react-router-dom";
 import face from '../img/face.png'
 import {GiPlayButton} from 'react-icons/gi'
+import {BsDash} from 'react-icons/bs'
 import React, {useEffect, useState} from 'react'
 import circle from '../img/circle.png'
 import circlee from '../img/circlee.png'
@@ -128,7 +129,7 @@ const Home = (props) => {
         </h1>
         <div className='sm:max-w-[500px] md:max-w-[700px] lg:max-w-[450px] max-w-[400px] flex w-full sm:mt-4 pl-4 mt-2'>
         {showLine && <img className='h-[40px] md:h-[60px] w-[5px]' src={Line} alt='' />}
-        {showComponent && <p className='text-[10px] sm:text-[15px] md:text-[16px] lg:text-[17px] p pb-3 ml-3 leading-3 md:text-sm'>A<strong class> Front-End Web Developer </strong> passionate about creating interactive
+        {showComponent && <p className='text-[12px] sm:text-[16px] md:text-[17px] pa mx-1 lg:text-[17px] p md:pb-3 md:ml-3 leading-3 md:text-sm'>A<strong className='text-white'> Front-End Web Developer </strong > passionate about creating interactive
         applications and experiences on the web.
         </p>}
         </div>
@@ -160,26 +161,26 @@ const Home = (props) => {
             <div className=' sm:p-1 sm:mb-16 py-2  sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1100px] mx-auto max-w-[300px]  grid md:grid-cols-2'>
             
             <div className='about flex flex-col md:col-span-2 justify-center'>
-                <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold pb-4'>About.</h1>
-                <p className='text-[10px] pb-2  p sm:text-xs md:text-sm'>Hello! My name is Tolulope Olonibua, i am a
+                <h1 className='text-2xl md:text-3xl lg:text-4xl pb-4'>About Me</h1>
+                <p className='text-[12px] text-white pb-2 p sm:text-xs md:text-sm'>Hello! My name is Tolulope Olonibua, i am a
                 detail-oriented Frontend Software Engineer dedicated to the quest of 
-                developing solutions that leverage on best practise technologies to deliver top user experience. 
-                My interest in web development started back in high school, more than my high school buddies, i was always intrigued by technology.
-                In high school, i was appointed the CISCO junior instructor for my level. </p>
-                <p className='text-[10px] pb-2  p sm:text-xs md:text-sm'>However, six years ago, after graduating from high school, my friend and I printed 500 pages of a book on HTML and CSS to learn how to make websites
-                    but as soon as i moved to the University, i was focused on my academic work. After graduating from the University, i started observing numerous website designs,
-                    i said to myself, "how do people make such cool websites!" then i recall my previous interest in website development.
-                    I started learning the basics by reading documents and watching instructional videos on website development.
+                developing solutions that leverage on best practise technologies to deliver top user experience. My approach to web design and development is inﬂuenced by my 
+            understanding of design as a problem solving process. i'm commited to solving complex problems through data driven processes that translate business objective to its reality. 
+                </p>
+                
+                <p className='text-[12px] text-white pb-2  p sm:text-xs md:text-sm'><span className='text-white inline-block'>My Journey! -</span> "My interest in web development started back in high school, more than my buddies, i was always intrigued by technology. 
+                This led to my appointment as the junior <strong>CISCO </strong>instructor for my level. I printed a 500 pages book on HTML and CSS after high school to learn how to create websites
+                    but as soon as i moved to the University, i was focused on my academic work. My love has always been website creation therefore after my Bachelor's degree,
+                    i enrolled in various web development courses which broadens my knowlegde".
 
                 </p>
     
-            <p className='text-[10px] p pt-2 sm:text-xs md:text-sm'>My approach to web design and development is inﬂuenced by my 
-            understanding of design as a problem solving process. Having attained the necessary competence, my main focus
+            <p className='text-[12px] text-white pt-2 p sm:text-xs md:text-sm'> Having attained the necessary competence, my main focus
              these days is building accessible, inclusive products and digital
             experiences as much as possible. My goal is to secure a responsive carreer opportunity to fully utilize my skills, while making 
             significant contributions to achieve goals of a company that focus on customer satisfaction and experience.</p>
-            <div className='text-[10px] hidden md:block p pt-2 sm:text-xs md:text-sm mt-2'>
-                <p className='font-bold text-[11px] my-2 sm:text-sm md:text-sm'>Here are a few technologies i've been working with recently:</p>
+            <div className='text-[12px] hidden md:block p pt-2 sm:text-xs md:text-sm mt-2'>
+                <p className='tex-white text-[11px] my-2 sm:text-sm md:text-sm'>Here are a few technologies i've been working with recently:</p>
                 <div className='flex space-between'>
                 <div>
                     <p className='flex'><GiPlayButton className='mx-[2px]'/>Javascript</p>
@@ -213,9 +214,9 @@ const Home = (props) => {
         <div id='skills' className='w-full skill mt-10 sm:py-14 border-y-2 py-5 sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1100px] mx-auto max-w-[310px]'>
         
         <div className='sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1100px] max-w-[310px] mx-auto'>
-        <h1 className='text-2xl md:text-3xl mt-6 lg:text-4xl font-bold pb-4'>Skills & Education</h1>
-        <button className='text-[10px] px-6 p p-2 sm:text-xs hover:border border-r-2 rounded design md:text-sm' onClick={() => setSkill('Design')}>Design</button> 
-        <button className='text-[10px] p-2 p hover:border rounded sm:text-xs border-l-2 md:text-sm px-8' onClick={() => setSkill('Development')}> Development</button>
+        <h1 className='text-2xl md:text-3xl mt-6 lg:text-4xl pb-4'>Skills & Education</h1>
+        <button className='text-[10px] px-6 p p-2 sm:text-xs btn design md:text-sm' onClick={() => setSkill('Design')}>Design</button> 
+        <button className='text-[10px] p-2 p sm:text-xs btn md:text-sm px-8' onClick={() => setSkill('Development')}> Development</button>
         </div>
         
      <div className='mx-auto items-center grid md:grid-cols-2'>
@@ -242,12 +243,12 @@ const Home = (props) => {
                 <img className='mx-auto inline-block h-24  md:h-[100px] lg:h-[110px] pt-12 items-center align-middle' src={tools} alt='' />
                 <img className='mx-auto float-right' src={process} alt='' />
             </div>
-            <div className=' w-[200px] text-[11px] sm:text-xs mx-4 py-2'>
-                <p className='flex py-2 pp items-center'><img className='px-1' src={html} alt='' /> HTML</p>  
-                <p className='flex py-2 pp items-center'><img className='px-1' src={css} alt='' /> CSS</p>
-                <p className='flex py-2 pp items-center'><img className='px-1' src={javascript} alt='' />Javascript</p>
-                <p className='flex py-2 pp items-center'><img className='px-1' src={Reactt} alt='' /> React</p>
-                <p className='flex py-2 pp items-center'><img className='px-1' src={wordpress} alt='' />Wordpress</p>
+            <div className=' w-[170px] h-[150px] text-[11px] sm:text-xs mx-4'>
+                <p className='flex py-2 p items-center'><img className='px-1' src={html} alt='' /> HTML</p>  
+                <p className='flex py-2 p items-center'><img className='px-1' src={css} alt='' /> CSS</p>
+                <p className='flex py-2 p items-center'><img className='px-1' src={javascript} alt='' />Javascript</p>
+                <p className='flex py-2 p items-center'><img className='px-1' src={Reactt} alt='' /> React</p>
+                <p className='flex py-2 p items-center'><img className='px-1' src={wordpress} alt='' />Wordpress</p>
             </div>
          </div>
         }
@@ -287,9 +288,9 @@ const Home = (props) => {
     
     <div className='w-full project mt-8 sm:py-8 py-5 p-4 sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1100px] mx-auto max-w-[310px]'>
         <div className= 'sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1100px] max-w-[330px] mx-auto'>
-        {showComponent &&   <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold pb-10'>Projects.</h1>}
-        {showComponent &&   <button className='text-[10px] px-6 p-2 sm:text-xs hover:border p  border-r-2 rounded design md:text-sm' onClick={() => setSkill('Design')}>Design</button> }
-        {showComponent &&   <button className='text-[10px] p-2 sm:text-xs hover:border p border-l-2 rounded  md:text-sm px-8' onClick={() => setSkill('Development')}> Development</button>}
+        {showComponent &&   <h1 className='text-2xl md:text-3xl lg:text-4xl pb-10'>Projects</h1>}
+        {showComponent &&   <button className='text-[10px] px-6 p-2 sm:text-xs p btn  design md:text-sm' onClick={() => setSkill('Design')}>Design</button> }
+        {showComponent &&   <button className='text-[10px] p-2 sm:text-xs  p btn md:text-sm px-8' onClick={() => setSkill('Development')}> Development</button>}
       </div>
         {skill === 'Design' && 
         <div className='py-5 items-center grid md:grid-cols-3'>
@@ -300,22 +301,22 @@ const Home = (props) => {
             <p className='flex text-center font-bold mx-4 underline underline-offset-2  p-2 text-[10px] md:text-xs'> <a href='https://tolulope55.github.io/pocketapp' target='_blank'>Visit site </a> <img className='text-center h-3 mx-2' src={Arrow} alt=''/></p>
         </div>
 
-        <div className=' border-2 md:border-4 text-center mx-auto bg mt-4 p h-72 w-72  py-10'>
+        <div className=' bgg border-2 md:border-4 text-center mx-auto bg mt-4 p h-72 w-72  py-10'>
         <h2 className='font-bold text-[14px] md:text-[17px]'>My Portfolio Site </h2>
             <p className='p-2 my-4 text-[10px] md:text-xs'>Designed and Developed my Portfolio website from scratch using React - Tailwind Css </p>
             <p className='flex p-2 text-[10px] md:text-xs font-bold mx-4 underline underline-offset-2 text-center '><a href='https://olonibua.github.io/tolulope' target='_blank'>Visit site </a> <img className='text-center h-3 mx-2' src={Arrow} alt=''/></p>
         </div>
 
-        <div className=' border-2 md:border-4 text-center mx-auto bg mt-4 p h-72 w-72  py-10'>
+        <div className=' bgg border-2 md:border-4 text-center mx-auto bg mt-4 p h-72 w-72  py-10'>
         </div>
         </div>
          }
         {skill === 'Development' && 
         <div className='py-5 items-center grid lg:grid-cols-2 '>
         
-        <div className=' border-2 md:border-4 text-center mx-auto bg mt-4 p h-72 w-72  py-10'>
+        <div className=' bgg md:border-current border-white border-2 md:border-4 text-center mx-auto bg mt-4 p h-72 w-72  py-10'>
         </div>
-        <div className=' border-2 md:border-4 text-center mx-auto bg mt-4 p h-72 w-72  py-10'>
+        <div className=' bgg border-2 md:border-4 text-center mx-auto bg mt-4 p h-72 w-72  py-10'>
         </div>
         </div>
           } 
