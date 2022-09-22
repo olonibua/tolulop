@@ -137,7 +137,7 @@ const Home = (props) => {
             {showsign && <img className='w-[100px] mt-7 sm:hidden z-10 block' src={signature} alt=''/> } 
              
         </div>
-        {showAbout && <img className='w-[180px] aimg lg:w-[310px] text-center mt-24 justify-center align-middle hidden md:block md:mx-auto ' src={Abouto} alt='' />}
+        {showAbout && <img className='w-[180px] aimg lg:w-[310p text-center mt-28 justify-center align-middle hidden md:block md:mx-auto ' src={Abouto} alt='' />}
         
         </div>
         <div className='wel-w text-[70px] sm:text-[110px] sm:max-w-[400px] md:max-w-[900px] lg:max-w-[1100px] max-w-[280px]'>
@@ -162,24 +162,24 @@ const Home = (props) => {
             
             <div className='about flex flex-col md:col-span-2 justify-center'>
                 <h1 className='text-2xl md:text-3xl lg:text-4xl pb-4'>About Me</h1>
-                <p className='text-[12px] text-white pb-2 p sm:text-xs md:text-sm'>Hello! My name is Tolulope Olonibua, i am a
+                <p className='text-[10px] text-white pb-2 p sm:text-xs md:text-sm'>Hello! My name is Tolulope Olonibua, i am a
                 detail-oriented Frontend Software Engineer dedicated to the quest of 
                 developing solutions that leverage on best practise technologies to deliver top user experience. My approach to web design and development is inﬂuenced by my 
             understanding of design as a problem solving process. i'm commited to solving complex problems through data driven processes that translate business objective to its reality. 
                 </p>
                 
-                <p className='text-[12px] text-white pb-2  p sm:text-xs md:text-sm'><span className='text-white inline-block'>My Journey! -</span> "My interest in web development started back in high school, more than my buddies, i was always intrigued by technology. 
+                <p className='text-[10px] text-white pb-2  p sm:text-xs md:text-sm'><span className='text-white inline-block'>My Journey! -</span> "My interest in web development started back in high school, more than my buddies, i was always intrigued by technology. 
                 This led to my appointment as the junior <strong>CISCO </strong>instructor for my level. I printed a 500 pages book on HTML and CSS after high school to learn how to create websites
                     but as soon as i moved to the University, i was focused on my academic work. My love has always been website creation therefore after my Bachelor's degree,
                     i enrolled in various web development courses which broadens my knowlegde".
 
                 </p>
     
-            <p className='text-[12px] text-white pt-2 p sm:text-xs md:text-sm'> Having attained the necessary competence, my main focus
+            <p className='text-[10px] text-white pt-2 p sm:text-xs md:text-sm'> Having attained the necessary competence, my main focus
              these days is building accessible, inclusive products and digital
             experiences as much as possible. My goal is to secure a responsive carreer opportunity to fully utilize my skills, while making 
             significant contributions to achieve goals of a company that focus on customer satisfaction and experience.</p>
-            <div className='text-[12px] hidden md:block p pt-2 sm:text-xs md:text-sm mt-2'>
+            <div className='text-[10px] hidden md:block p pt-2 sm:text-xs md:text-sm mt-2'>
                 <p className='tex-white text-[11px] my-2 sm:text-sm md:text-sm'>Here are a few technologies i've been working with recently:</p>
                 <div className='flex space-between'>
                 <div>
@@ -294,21 +294,35 @@ const Home = (props) => {
       </div>
         {skill === 'Design' && 
         <div className='py-5 items-center grid md:grid-cols-3'>
+        <div className=' bgg border-2 md:border-4 text-center mx-auto bg mt-4 p h-72 w-72  py-10'>
+        <h2 className='font-bold text-[14px] md:text-[17px]'>Vscode </h2>
+            <p className='p-2 my-4 text-[10px] md:text-xs'>Developed the Vscode app startup page with its basic functionalities using React - Tailwind Css </p>
+           <div className='grid grid-cols-2'>
+            <p className='flex p-2 text-[10px] md:text-xs font-bold mx-2 underline underline-offset-2 text-center '><a href='https://olonibua.github.io/vscode/' target='_blank'>Live site </a> <img className='text-center h-3 mx-2 mt-1' src={Arrow} alt=''/></p>
+            <p className='flex p-2 text-[10px] md:text-xs font-bold mx-2 underline underline-offset-2 text-center '><a href='https://github.com/olonibua/vscode' target='_blank'>Github</a> <img className='text-center h-3 mx-2 mt-1' src={Arrow} alt=''/></p>
+           </div>
+        </div>
 
         <div className='bgg text-center mx-auto border-2 md:border-4 mt-4 p h-72 w-72 py-10'>
             <h2 className='font-bold text-[14px] md:text-[17px]'>Pocket App</h2>
             <p className='p-2 my-4 text-[10px] md:text-xs'>Redesigned and Developed Pocket App website landing page</p>
-            <p className='flex text-center font-bold mx-4 underline underline-offset-2  p-2 text-[10px] md:text-xs'> <a href='https://tolulope55.github.io/pocketapp' target='_blank'>Visit site </a> <img className='text-center h-3 mx-2' src={Arrow} alt=''/></p>
+            <div className='grid grid-cols-2'>
+            <p className='flex p-2 text-[10px] md:text-xs font-bold mx-2 underline underline-offset-2 text-center '><a href='https://tolulope55.github.io/pocketapp' target='_blank'>Live site </a> <img className='text-center h-3 mx-2 mt-1' src={Arrow} alt=''/></p>
+            <p className='flex p-2 text-[10px] md:text-xs font-bold mx-2 underline underline-offset-2 text-center '><a href='https://github.com/tolulope55/pocketapp' target='_blank'>Github</a> <img className='text-center h-3 mx-2 mt-1' src={Arrow} alt=''/></p>
+           </div>
         </div>
 
         <div className=' bgg border-2 md:border-4 text-center mx-auto bg mt-4 p h-72 w-72  py-10'>
         <h2 className='font-bold text-[14px] md:text-[17px]'>My Portfolio Site </h2>
             <p className='p-2 my-4 text-[10px] md:text-xs'>Designed and Developed my Portfolio website from scratch using React - Tailwind Css </p>
-            <p className='flex p-2 text-[10px] md:text-xs font-bold mx-4 underline underline-offset-2 text-center '><a href='https://olonibua.github.io/tolulope' target='_blank'>Visit site </a> <img className='text-center h-3 mx-2' src={Arrow} alt=''/></p>
+            <div className='grid grid-cols-2'>
+            <p className='flex p-2 text-[10px] md:text-xs font-bold mx-2 underline underline-offset-2 text-center '><a href='https://olonibua.github.io/tolulope' target='_blank'>Live site </a> <img className='text-center h-3 mx-2 mt-1' src={Arrow} alt=''/></p>
+            <p className='flex p-2 text-[10px] md:text-xs font-bold mx-2 underline underline-offset-2 text-center '><a href='https://github.com/olonibua/tolulope' target='_blank'>Github</a> <img className='text-center h-3 mx-2 mt-1' src={Arrow} alt=''/></p>
+           </div>
+  
         </div>
 
-        <div className=' bgg border-2 md:border-4 text-center mx-auto bg mt-4 p h-72 w-72  py-10'>
-        </div>
+        
         </div>
          }
         {skill === 'Development' && 
@@ -343,7 +357,7 @@ const Home = (props) => {
     <div className='text-white  bg-black w-full  mx-auto '>
     <div className='sm:max-w-[500px]  md:max-w-[700px] lg:max-w-[1100px] max-w-[300px] w-full py-10  mx-auto'>
     <p className='text-[13px] text-md'>Got an idea?</p>
-        <h2 className='text-xl md:text-3xl lg:text-4xl pb-8 p underline underline-offset-2 md:underline-offset-4 font-bold'><a href='https://linkedin.com/olonibua-tolu-465042127' target="_blank">Let's talk about it</a></h2>
+        <h2 className='text-xl md:text-3xl lg:text-4xl pb-8 p underline underline-offset-2 md:underline-offset-4 font-bold'><a href='http://linkedin.com/in/olonibua-tolulope' target="_blank">Let's talk about it</a></h2>
       <div className=' border-b-2 py-2 grid md:grid-cols-3'>
      
        <p className='text-[13px] md:text-[16px] text-[#878787]'>mail:<br/><span className='p text-white'>Olonts@gmail.com</span></p>
@@ -357,7 +371,7 @@ const Home = (props) => {
       
     </div>
     <div className='bg-[#111117] w-full text-center h-10 mx-auto'>
-          <p className='text-[10px] py-3 p md:text-md'>Designed and Developed by <strong className='text-white p'> <a href='https://linkedin.com/olonibua-tolu-465042127' target="_blank">Tolulope Olonibua</a></strong></p>
+          <p className='text-[10px] py-3 p md:text-md'>Designed and Developed by <strong className='text-white p'> <a href='http://linkedin.com/in/olonibua-tolulope' target="_blank">Tolulope Olonibua</a></strong></p>
     </div>
   </div>
 }
